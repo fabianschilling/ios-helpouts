@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B5DD69E-BF05-4F7A-B530-65D228F0795E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Helpouts</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3E9F3678A2C9F81F069B1E78E33166F20C70AB7D</key>
+		<string>https://github.com/fabianschilling/Helpouts.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Helpouts.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3E9F3678A2C9F81F069B1E78E33166F20C70AB7D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fabianschilling/Helpouts.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3E9F3678A2C9F81F069B1E78E33166F20C70AB7D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3E9F3678A2C9F81F069B1E78E33166F20C70AB7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Helpouts</string>
+		</dict>
+	</array>
+</dict>
+</plist>

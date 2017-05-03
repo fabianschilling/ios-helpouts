@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Helpout" representedClassName="Helpouts.Helpout" syncable="YES">
+        <attribute name="record" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="creator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="helpouts_created" inverseEntity="User" syncable="YES"/>
+        <relationship name="helper" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="helpouts_helped_out" inverseEntity="User" syncable="YES"/>
+        <relationship name="helpers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="helpouts_helped" inverseEntity="User" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="helpout" inverseEntity="Location" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="helpout" inverseEntity="Message" syncable="YES"/>
+        <relationship name="receivers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="helpouts_received" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Helpouts.Location" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="helpout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Helpout" inverseName="location" inverseEntity="Helpout" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="location" inverseEntity="Message" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="location" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Helpouts.Message" syncable="YES">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="record" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="helpout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Helpout" inverseName="messages" inverseEntity="Helpout" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="message" inverseEntity="Location" syncable="YES"/>
+        <relationship name="receiver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="received_messages" inverseEntity="User" syncable="YES"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="sent_messages" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="Helpouts.User" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="record" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="helpouts_created" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Helpout" inverseName="creator" inverseEntity="Helpout" syncable="YES"/>
+        <relationship name="helpouts_helped" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Helpout" inverseName="helpers" inverseEntity="Helpout" syncable="YES"/>
+        <relationship name="helpouts_helped_out" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Helpout" inverseName="helper" inverseEntity="Helpout" syncable="YES"/>
+        <relationship name="helpouts_received" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Helpout" inverseName="receivers" inverseEntity="Helpout" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="user" inverseEntity="Location" syncable="YES"/>
+        <relationship name="received_messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="receiver" inverseEntity="Message" syncable="YES"/>
+        <relationship name="sent_messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="sender" inverseEntity="Message" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Helpout" positionX="90" positionY="-666" width="128" height="133"/>
+        <element name="Location" positionX="657" positionY="-744" width="128" height="118"/>
+        <element name="Message" positionX="304" positionY="-531" width="128" height="150"/>
+        <element name="User" positionX="601" positionY="-468" width="128" height="208"/>
+    </elements>
+</model>

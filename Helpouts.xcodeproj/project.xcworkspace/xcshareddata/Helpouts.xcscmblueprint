@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AAD319C2839BF95E4AE7E89BF632827F220D9891",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3E9F3678A2C9F81F069B1E78E33166F20C70AB7D" : 0,
+    "AAD319C2839BF95E4AE7E89BF632827F220D9891" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6B5DD69E-BF05-4F7A-B530-65D228F0795E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3E9F3678A2C9F81F069B1E78E33166F20C70AB7D" : "Helpouts",
+    "AAD319C2839BF95E4AE7E89BF632827F220D9891" : "ios-helpouts\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Helpouts",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Helpouts.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fabianschilling\/Helpouts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E9F3678A2C9F81F069B1E78E33166F20C70AB7D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:fabianschilling\/ios-helpouts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAD319C2839BF95E4AE7E89BF632827F220D9891"
+    }
+  ]
+}
